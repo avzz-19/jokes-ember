@@ -1,0 +1,12 @@
+<div class="jokes-container">
+  <h1>Jokes</h1>
+
+  {{#if @model}}
+    <div class="joke">
+      <h2>{{@model.setup}}</h2>
+      <p>{{@model.delivery}}</p>
+    </div>
+  {{else}}
+    <p>Loading joke...</p>
+  {{/if}}
+</div>
